@@ -45,24 +45,17 @@ docker compose up --build
 
 ## Kubernetes
 
-1. Build and push your image:
-   ```bash
-   docker build -t ghcr.io/YOUR_USER/embed-server:latest .
-   docker push ghcr.io/YOUR_USER/embed-server:latest
-   ```
-
-2. Edit `k8s.yaml` — replace `YOUR_USER` and `yourdomain.com`.
-
-3. Apply:
-   ```bash
-   kubectl apply -f k8s.yaml
-   ```
+Build and push your image:
+```bash
+docker build -t ghcr.io/matiix310/embed-server:latest .
+docker push ghcr.io/matiix310/embed-server:latest
+```
 
 ## Embedding
 
 ```html
 <iframe
-  src="https://embeds.yourdomain.com/embed/deadlines"
+  src="https://embeds.matiix310.dev/embed/emapse"
   width="400"
   height="500"
   frameborder="0"
