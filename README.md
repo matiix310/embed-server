@@ -39,12 +39,6 @@ bun dev          # hot-reload on http://localhost:3000
 
 ## Docker
 
-```bash
-docker compose up --build
-```
-
-## Kubernetes
-
 Build and push your image:
 ```bash
 docker build -t ghcr.io/matiix310/embed-server:latest .
